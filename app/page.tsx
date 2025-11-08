@@ -9,6 +9,7 @@ import TestimonialCard from "@/components/TestimonialCard";
 import ChromaGrid from "@/components/ChromaGrid";
 import ContactForm from "@/components/ContactForm";
 import TextPressure from "@/components/TextPressure";
+import SectionHeader from "@/components/SectionHeader";
 import { Button } from "@/components/ui/button";
 import { Separator } from "@/components/ui/separator";
 
@@ -205,18 +206,12 @@ export default function Home() {
       {/* Services Section */}
       <Section id="services">
         <div className="max-w-6xl mx-auto">
-          <motion.div
-            className="text-center mb-16"
-            initial={{ opacity: 0, y: 20 }}
-            whileInView={{ opacity: 1, y: 0 }}
-            transition={{ duration: 0.6 }}
-            viewport={{ once: true }}
+          <SectionHeader 
+            variant="neon"
+            subtitle="End-to-end UX design and research solutions tailored to your needs."
           >
-            <h2 className="text-4xl md:text-5xl font-bold mb-4">Our Services</h2>
-            <p className="text-xl text-muted-foreground max-w-2xl mx-auto mb-12">
-              End-to-end UX design and research solutions tailored to your needs.
-            </p>
-          </motion.div>
+            Our Services
+          </SectionHeader>
 
           <div className="flex justify-center">
             <ServicesBento
@@ -238,19 +233,12 @@ export default function Home() {
       {/* Work Section */}
       <Section id="work">
         <div className="max-w-6xl mx-auto">
-          <motion.div
-            className="text-center mb-16"
-            initial={{ opacity: 0, y: 20 }}
-            whileInView={{ opacity: 1, y: 0 }}
-            transition={{ duration: 0.6 }}
-            viewport={{ once: true }}
+          <SectionHeader 
+            variant="neon"
+            subtitle="Real-world projects, measurable results, and the stories behind them."
           >
-            <h2 className="text-4xl md:text-5xl font-bold mb-4">Case Studies</h2>
-            <p className="text-xl text-muted-foreground max-w-2xl mx-auto">
-              Real-world projects, measurable results, and the stories behind
-              them.
-            </p>
-          </motion.div>
+            Case Studies
+          </SectionHeader>
 
           <div className="grid grid-cols-1 lg:grid-cols-2 xl:grid-cols-3 gap-6 mb-16">
             {caseStudies.map((study, index) => (
@@ -261,18 +249,12 @@ export default function Home() {
           {/* Testimonials */}
           <Separator className="my-16" />
 
-          <motion.div
-            className="text-center mb-12"
-            initial={{ opacity: 0, y: 20 }}
-            whileInView={{ opacity: 1, y: 0 }}
-            transition={{ duration: 0.6 }}
-            viewport={{ once: true }}
+          <SectionHeader 
+            variant="neon"
+            subtitle="Trusted by leading companies to deliver exceptional experiences."
           >
-            <h3 className="text-3xl font-bold mb-4">What Clients Say</h3>
-            <p className="text-lg text-muted-foreground">
-              Trusted by leading companies to deliver exceptional experiences.
-            </p>
-          </motion.div>
+            What Clients Say
+          </SectionHeader>
 
           <div className="grid grid-cols-1 md:grid-cols-3 gap-6">
             {testimonials.map((testimonial, index) => (
@@ -289,36 +271,21 @@ export default function Home() {
       {/* About Section */}
       <Section id="about">
         <div className="max-w-6xl mx-auto">
-          <motion.div
-            className="text-center mb-16"
-            initial={{ opacity: 0, y: 20 }}
-            whileInView={{ opacity: 1, y: 0 }}
-            transition={{ duration: 0.6 }}
-            viewport={{ once: true }}
+          <SectionHeader 
+            variant="neon"
+            subtitle="Aurorealis is a UX design and research agency dedicated to creating intuitive digital experiences. We combine deep user insights with innovative design thinking to solve complex problems and drive business results."
           >
-            <h2 className="text-4xl md:text-5xl font-bold mb-4">About Us</h2>
-            <p className="text-xl text-muted-foreground max-w-3xl mx-auto leading-relaxed">
-              Aurorealis is a UX design and research agency dedicated to creating
-              intuitive digital experiences. We combine deep user insights with
-              innovative design thinking to solve complex problems and drive
-              business results.
-            </p>
-          </motion.div>
+            About Us
+          </SectionHeader>
 
           <Separator className="my-16" />
 
-          <motion.div
-            className="text-center mb-12"
-            initial={{ opacity: 0, y: 20 }}
-            whileInView={{ opacity: 1, y: 0 }}
-            transition={{ duration: 0.6 }}
-            viewport={{ once: true }}
+          <SectionHeader 
+            variant="neon"
+            subtitle="Experienced designers and researchers committed to excellence."
           >
-            <h3 className="text-3xl font-bold mb-4">Meet the Team</h3>
-            <p className="text-lg text-muted-foreground mb-8">
-              Experienced designers and researchers committed to excellence.
-            </p>
-          </motion.div>
+            Meet the Team
+          </SectionHeader>
 
           <motion.div
             initial={{ opacity: 0, y: 20 }}

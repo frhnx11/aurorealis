@@ -2,7 +2,6 @@
 
 import { useState, useEffect } from "react";
 import { motion } from "framer-motion";
-import Image from "next/image";
 import { Button } from "@/components/ui/button";
 
 export default function Navigation() {
@@ -71,13 +70,6 @@ export default function Navigation() {
             whileTap={{ scale: 0.98 }}
             className="flex items-center gap-2.5 group"
           >
-            <Image
-              src="/logo.svg"
-              alt="Aurorealis"
-              width={32}
-              height={32}
-              className="w-8 h-8 transition-transform group-hover:rotate-12"
-            />
             <span className="text-xl font-bold tracking-tight bg-gradient-to-r from-purple-400 via-purple-500 to-purple-600 bg-clip-text text-transparent">
               Aurorealis
             </span>
