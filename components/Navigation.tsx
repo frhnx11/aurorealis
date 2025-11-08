@@ -1,6 +1,6 @@
 "use client";
 
-import { useState, useEffect } from "react";
+import { useState, useEffect, useMemo } from "react";
 import { motion } from "framer-motion";
 import { Button } from "@/components/ui/button";
 
@@ -8,12 +8,12 @@ export default function Navigation() {
   const [activeSection, setActiveSection] = useState("home");
   const [scrolled, setScrolled] = useState(false);
 
-  const navItems = [
+  const navItems = useMemo(() => [
     { name: "Home", id: "home" },
     { name: "Services", id: "services" },
     { name: "Work", id: "work" },
     { name: "About", id: "about" },
-  ];
+  ], []);
 
   useEffect(() => {
     const handleScroll = () => {
