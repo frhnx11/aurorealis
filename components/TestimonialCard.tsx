@@ -44,7 +44,7 @@ export default function TestimonialCard({
             </svg>
           </div>
           <p className="text-foreground/90 leading-relaxed mb-6 italic">
-            "{quote}"
+            &ldquo;{quote}&rdquo;
           </p>
           <div className="flex items-center gap-3">
             <Avatar>

@@ -66,7 +66,7 @@ export default function ContactForm() {
             </div>
             <h4 className="text-xl font-semibold mb-2">Thank you!</h4>
             <p className="text-muted-foreground">
-              We'll get back to you as soon as possible.
+              We&apos;ll get back to you as soon as possible.
             </p>
           </div>
         ) : (
