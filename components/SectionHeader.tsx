@@ -59,7 +59,7 @@ export default function SectionHeader({
         whileHover={{ scale: 1.02 }}
         transition={{ type: "spring", stiffness: 300, damping: 20 }}
       >
-        <h2 className="text-4xl md:text-5xl font-bold mb-2 bg-gradient-to-r from-white via-purple-100 to-white bg-clip-text text-transparent tracking-tight uppercase" style={{ fontFamily: 'Rockybilly, serif' }}>
+        <h2 className="text-xl md:text-2xl lg:text-3xl font-normal mb-2 bg-gradient-to-r from-white via-purple-100 to-white bg-clip-text text-transparent tracking-tight uppercase font-geo">
           {children}
         </h2>
         {subtitle && (

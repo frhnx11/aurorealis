@@ -1,5 +1,5 @@
 import type { Metadata } from "next";
-import { Geist, Geist_Mono, Space_Grotesk } from "next/font/google";
+import { Geist, Geist_Mono, Space_Grotesk, Geo } from "next/font/google";
 import "./globals.css";
 import LiquidEther from "@/components/LiquidEther";
 
@@ -19,6 +19,12 @@ const spaceGrotesk = Space_Grotesk({
   weight: ["300", "400", "500", "600", "700"],
 });
 
+const geo = Geo({
+  variable: "--font-geo",
+  subsets: ["latin"],
+  weight: ["400"],
+});
+
 export const metadata: Metadata = {
   title: "Aurorealis - UX Design & Research Agency",
   description: "Crafting research-driven digital experiences. Expert UX design and research services including user research, wireframes, prototypes, and usability testing.",
@@ -33,7 +39,7 @@ export default function RootLayout({
   return (
     <html lang="en" className="dark scroll-smooth">
       <body
-        className={`${geistSans.variable} ${geistMono.variable} ${spaceGrotesk.variable} antialiased`}
+        className={`${geistSans.variable} ${geistMono.variable} ${spaceGrotesk.variable} ${geo.variable} antialiased`}
       >
         <div style={{ position: 'fixed', inset: 0, zIndex: -1 }}>
           <LiquidEther />
