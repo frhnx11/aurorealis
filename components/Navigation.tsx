@@ -70,7 +70,7 @@ export default function Navigation() {
             whileTap={{ scale: 0.98 }}
             className="flex items-center gap-2.5 group"
           >
-            <span className="text-xl font-bold tracking-tight bg-gradient-to-r from-purple-400 via-purple-500 to-purple-600 bg-clip-text text-transparent">
+            <span className="text-xl font-bold tracking-tight text-white">
               Aurorealis
             </span>
           </motion.button>

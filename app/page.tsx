@@ -6,7 +6,6 @@ import Section from "@/components/Section";
 import ServicesBento from "@/components/ServicesBento";
 import CaseStudyCard from "@/components/CaseStudyCard";
 import TestimonialCard from "@/components/TestimonialCard";
-import ChromaGrid from "@/components/ChromaGrid";
 import ContactForm from "@/components/ContactForm";
 import TextPressure from "@/components/TextPressure";
 import SectionHeader from "@/components/SectionHeader";
@@ -75,32 +74,6 @@ export default function Home() {
     },
   ];
 
-  const team = [
-    {
-      image: "https://i.pravatar.cc/300?img=8",
-      title: "Alex Rivera",
-      subtitle: "Lead UX Researcher",
-      handle: "@alexrivera",
-      borderColor: "#8B5CF6",
-      gradient: "linear-gradient(145deg, #8B5CF6, #000)",
-    },
-    {
-      image: "https://i.pravatar.cc/300?img=11",
-      title: "Jordan Kim",
-      subtitle: "Senior UX/UI Designer",
-      handle: "@jordankim",
-      borderColor: "#10B981",
-      gradient: "linear-gradient(210deg, #10B981, #000)",
-    },
-    {
-      image: "https://i.pravatar.cc/300?img=25",
-      title: "Sam Patel",
-      subtitle: "Interaction Designer",
-      handle: "@sampatel",
-      borderColor: "#F59E0B",
-      gradient: "linear-gradient(165deg, #F59E0B, #000)",
-    },
-  ];
 
   const scrollToSection = (id: string) => {
     const element = document.getElementById(id);
@@ -277,31 +250,6 @@ export default function Home() {
           >
             About Us
           </SectionHeader>
-
-          <Separator className="my-16" />
-
-          <SectionHeader 
-            variant="neon"
-            subtitle="Experienced designers and researchers committed to excellence."
-          >
-            Meet the Team
-          </SectionHeader>
-
-          <motion.div
-            initial={{ opacity: 0, y: 20 }}
-            whileInView={{ opacity: 1, y: 0 }}
-            transition={{ duration: 0.6 }}
-            viewport={{ once: true }}
-          >
-            <ChromaGrid
-              items={team}
-              radius={300}
-              columns={3}
-              rows={1}
-              damping={0.45}
-              fadeOut={0.6}
-            />
-          </motion.div>
 
           <Separator className="my-16" />
 
